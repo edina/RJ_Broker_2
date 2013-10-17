@@ -295,7 +295,6 @@ sub input_fh {
     #    $epdata->{userid} = $owner_id;
     #}
 
-    warn Dumper($epdata);
     my $dataobj = $plugin->epdata_to_dataobj( $dataset, $epdata );
     if ( defined $dataobj ) {
       push @ids, $dataobj->get_id;
