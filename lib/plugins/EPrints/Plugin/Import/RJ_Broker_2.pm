@@ -25,7 +25,7 @@ use EPrints::Plugin::Import::RJ_Broker_parser ('parse_epdcx_xml_data');
 use XML::LibXML 1.63;
 use Archive::Extract;
 
-our @ISA = qw/ EPrints::Plugin::Import::Archive /;
+our @ISA = qw/ EPrints::Plugin::Import::Archive EPrints::Plugin::Import::RJ_Broker_parser /;
 
 #===  CLASS METHOD  ===========================================================
 #        CLASS:  RJ_Broker_2
