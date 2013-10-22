@@ -19,6 +19,8 @@ use strict;
 use XML::LibXML 1.63;
 use Exporter;
 
+our @ISA = qw/ EPrints::Plugin::Import /;
+
 our @EXPORT_OK = ("parse_epdcx_xml_data");
 
 # This stops the plugin being available to users
