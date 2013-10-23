@@ -115,7 +115,7 @@ sub _parse_epdcx {
   my ( $plugin, $desc, $epdata, $set ) = @_;
 
   foreach my $stat ( $desc->getElementsByTagName("statement") ) {
-    my ( $field, $value ) = _parse_statement($stat);
+    my ( $field, $value ) = parse_statement($stat);
 
     for ($field) {
 
@@ -136,7 +136,7 @@ sub _parse_epdcx {
                 unless $d->getAttribute('epdcx:resourceId') eq $attr;
 
             foreach my $stat2 ( $d->getElementsByTagName("statement") ) {
-              my ( $field2, $value2 ) = _parse_statement($stat2);
+              my ( $field2, $value2 ) = parse_statement($stat2);
 
               for ($field2) {
 
@@ -202,7 +202,7 @@ sub _parse_epdcx {
                 unless $d->getAttribute('epdcx:resourceId') eq $value;
 
             foreach my $stat2 ( $d->getElementsByTagName("statement") ) {
-              my ( $field2, $value2 ) = _parse_statement($stat2);
+              my ( $field2, $value2 ) = parse_statement($stat2);
               if ( $field2 eq 'grant_code' ) {
                 push @grants, $value2;
               }
@@ -244,7 +244,7 @@ sub _parse_epdcx {
 sub _parse_expr {
   my ( $plugin, $desc, $epdata ) = @_;
   foreach my $stat ( $desc->getElementsByTagName("statement") ) {
-    my ( $field, $value ) = _parse_statement($stat);
+    my ( $field, $value ) = parse_statement($stat);
 
     for ($field) {
 
@@ -308,7 +308,7 @@ sub _parse_expr {
 sub _parse_manif {
   my ( $plugin, $desc, $epdata, $set ) = @_;
   foreach my $stat ( $desc->getElementsByTagName("statement") ) {
-    my ( $field, $value ) = _parse_statement($stat);
+    my ( $field, $value ) = parse_statement($stat);
 
     for ($field) {
 
@@ -435,7 +435,7 @@ sub _parse_unknown {
   if ($resourceId) {
     $epdata->{unknown}->{$resourceId} = {};
     foreach my $stat ( $desc->getElementsByTagName("statement") ) {
-      my ( $field, $value ) = _parse_statement($stat);
+      my ( $field, $value ) = parse_statement($stat);
 
       for ($field) {
         m#givenname# && do {
@@ -451,7 +451,7 @@ sub _parse_unknown {
   } ## end if ($resourceId)
 } ## end sub _parse_unknown
 
-sub _parse_statement {
+sub parse_statement {
   my ($stat) = @_;
 
   my $property = $stat->getAttribute("propertyURI");
@@ -678,7 +678,7 @@ sub _parse_statement {
   } ## end for ($property)
   return;
 
-} ## end sub _parse_statement
+} ## end sub parse_statement
 
 sub _get_type {
   my ($stat) = @_;
