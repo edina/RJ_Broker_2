@@ -516,7 +516,11 @@ sub process_struct_elements {
                     filesize => -s $filepath,
                     _content => $fh,
                     };
-
+                $plugin->{session}->run_trigger( EPrints::Const::EP_TRIGGER_MEDIA_INFO,
+					epdata => $doc_data,
+					filename => $filename,
+					filepath => $filepath,
+					);
             } ## end foreach my $fptr (@fptrs)
             push @{$documents}, $doc_data;
         } ## end if ( scalar @fptrs )
