@@ -7,4 +7,5 @@ This package includes 4 sample files which show the range of metadata that the R
 
 To test deposits into your repository, you can use the cURL program:
 
-$> curl -i -u <username>:<password> --data-binary "@<filename>" -H 'X-Packaging: http://opendepot.org/broker/1.0' -H 'Content-Type: application/zip'  http://your.repo.example.com/path/to/collection
+$> curl -i -u <username>:<password> --data-binary "@<filename>" -H 'Content-Type: application/vnd.rjbroker'  http://your.repo.example.com/id/contents
+
