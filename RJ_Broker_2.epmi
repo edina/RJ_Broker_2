@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<epm xmlns='http://eprints.org/ep2/data/2.0' id='http://pok.pok.com/id/epm/RJ_Broker_2'>
+  <epmid>RJ_Broker_2</epmid>
+  <eprintid>335</eprintid>
+  <uri>http://bazaar.eprints.org/id/epm/RJ_Broker_2</uri>
+  <documents>
+    <document>
+      <files>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>static/images/epm/RJ_Broker_2.png</filename>
+          <mime_type>image/png</mime_type>
+          <hash>f07917c723697b0ebb9a596ccc175c49</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>52078</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>plugins/EPrints/Plugin/Import/RJ_Broker_2.pm</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>bcd0550d1a5c384a829b4d45915c37ed</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>19655</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>plugins/EPrints/Plugin/Import/RJ_Broker_parser.pm</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>1001ef3889625e6e03e90f4df0eaeecf</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>23893</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>cfg.d/zz_rj_broker_2.pl</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>a992dfd32bc6e48e1038f3934cbaf475</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>96</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/RJ_Broker_2/example export files/broker-eprint-323.zip</filename>
+          <mime_type>application/zip</mime_type>
+          <hash>6df17884f6eb5423ff45419f37b5d6e4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>6520</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/RJ_Broker_2/example export files/broker-eprint-427.zip</filename>
+          <mime_type>application/zip</mime_type>
+          <hash>d96499f0e35671117e6f209fdfee741e</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>2997</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/RJ_Broker_2/example export files/README</filename>
+          <mime_type>text/plain</mime_type>
+          <hash>21f48f399277287a9a526169796738d4</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>822</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/RJ_Broker_2/example export files/broker-eprint-467.zip</filename>
+          <mime_type>application/zip</mime_type>
+          <hash>3fbfd6a0df839411a97a839b26c96ce9</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>3001</filesize>
+        </file>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>epm/RJ_Broker_2/example export files/broker-eprint-337.zip</filename>
+          <mime_type>application/zip</mime_type>
+          <hash>482829b7f94e5a07986de8a73a14ee0b</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>7406367</filesize>
+        </file>
+      </files>
+      <mime_type>application/zip</mime_type>
+      <format>archive</format>
+      <main>epm/RJ_Broker_2/example export files/broker-eprint-337.zip</main>
+      <content>install</content>
+    </document>
+    <document>
+      <files>
+        <file>
+          <datasetid>document</datasetid>
+          <filename>static/images/epm/RJ_Broker_2.png</filename>
+          <mime_type>image/png</mime_type>
+          <hash>f07917c723697b0ebb9a596ccc175c49</hash>
+          <hash_type>MD5</hash_type>
+          <filesize>52078</filesize>
+        </file>
+      </files>
+      <format>image</format>
+      <main>static/images/epm/RJ_Broker_2.png</main>
+      <content>coverimage</content>
+    </document>
+  </documents>
+  <version>0.7</version>
+  <creators>
+    <item>
+      <name>
+        <family>Stuart</family>
+        <given>Ian</given>
+      </name>
+      <id>Ian.Stuart@ed.ac.uk</id>
+    </item>
+  </creators>
+  <datestamp>2017-08-23 10:10:33</datestamp>
+  <title>RJ Broker (for SWORD 2.0)</title>
+  <description>This is the SWORD 2 importer to receive deposit packages from the Repository Junction Broker.</description>
+  <home_page>https://github.com/edina/RJ_Broker_2</home_page>
+  <icon>images/epm/RJ_Broker_2.png</icon>
+</epm>
